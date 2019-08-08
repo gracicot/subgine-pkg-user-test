@@ -1,0 +1,24 @@
+{
+	"installation-path": "subgine-pkg-modules",
+	"dependencies": [
+		{
+			"name": "kangaru",
+			"repository": "https://github.com/gracicot/kangaru.git",
+			"options": "-DKANGARU_REVERSE_DESTRUCTION=On",
+			"tag": "v4.2.0"
+		},
+		{
+			"name": "cpplocate",
+			"repository": "https://github.com/cginternals/cpplocate.git",
+			"tag": "v2.1.0",
+			"options": "-DOPTION_BUILD_TESTS=Off -DBUILD_SHARED_LIBS=Off",
+			"ignore-version": true
+		},
+		{
+			"name": "Catch2",
+			"repository": "https://github.com/catchorg/Catch2.git",
+			"tag": "v2.9.1",
+			"options": "-DCATCH_BUILD_TESTING=Off -DCATCH_INSTALL_DOCS=Off"
+		}
+	]
+}
